@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("Dobrodosli u program za obavljanje osnovnih aritmetičkih operacija");
+
+        var x = prompt("Unesite prvi broj:");
+        var y = prompt("Unesite računsku operaciju (+, -, *, /):");
+        var z = prompt("Unesite drugi broj:");
+
+
+        if (y === "+") {
+            var rezultat = parseInt(x) + parseInt(z);
+        } else if (y === "-") {
+            var rezultat = parseInt(x) - parseInt(z);
+        } else if (y === "*") {
+            var rezultat = parseInt(x) * parseInt(z);
+        } else if (y === "/") {
+            var rezultat = parseInt(x) / parseInt(z);
+        } else {
+            rezultat = "Niste uneli dobru računsku operaciju";
+        }
+
+
+        alert("Vaš rezultat je:" + rezultat);
+
+        location.reload();
+    </script>
+
+
+
+</body>
+
+</html>
